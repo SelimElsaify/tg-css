@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content=" width="device-width, minimum-scale=1.0, maximum-scale=2.0, initial-scale=1.0, user-scale=2.0>
+
+<!-- link naar CSS-->
+<link rel="stylesheet" type="text/css" href="../css/styles.css">
+<head>
+	<title>Tables | Forms | Home</title>
+</head>
+<body>  
+    <div class="talen">
+    <label for="languages">Select language:</label>
+    <select id="languages">
+    <option value="english"><a href="#">English</a></option>
+    <option value="french"><a href="#">French</a></option>
+    <option value="dutch"><a href="#">Nederlands</a></option>
+    <option value="arabic"><a href="#">العربية</a></option>
+    </select>
+    </div>
+    <main>
+    	<header>
+	<nav>
+	    <ul>
+	        <li><a href="../index.html">Home</a></li>
+	        <li><a href="pages/tables.html">Tables</a></li>
+	        <li><a href="voorbeeld.html">Voorbeeld</a></li>
+	        <li><a href="/">JavaScript</a></li>
+	        <li><a href="/">Python</a></li>
+	        <li><a href="/">Contact</a></li>
+	    </ul>
+	</nav>
+        </header>
+	</main>
+	<h1>Oefening met tables en forms</h1>
+	<section id="cold">
+	    <h2>tabllen zijn awesome</h2>
+	    <table class="warm" border="1" cellspacing="0" cellpadding="0">
+	     <caption align="right"> Dit is een oefening met tabellen</caption>   
+	       <colgroup>
+	       <col class="brand"/>
+	       <col class="price"/>
+	       <col class="power"/>
+	       <col class="rating"/>
+	       </colgroup> 
+	   <thead>
+	       <tr>
+	           <th scope="col">Brand</th>
+	           <th scope="col">Price</th>
+	           <th scope="col">Power Source</th>
+	           <th scope="col">Class</th>
+	       </tr>
+	   </thead>
+        <tbody>
+           <tr>
+            <td>Machines en guns</td>
+            <td>244.00 €</td>
+            <td>Mechanical</td>
+            <td>4 stars</td>
+            </tr>
+              <tr>
+            <td>Machines en guns</td>
+            <td>222.00 €</td>
+            <td>Mechanical</td>
+            <td>4 stars</td>
+            </tr>
+              <tr>
+            <td>Machines en guns</td>
+            <td>211.00 €</td>
+            <td>Mechanical</td>
+            <td>4 stars</td>
+            </tr>
+              <tr>
+            <td>Machines en guns</td>
+            <td>220.00 €</td>
+            <td>Mechanical</td>
+            <td>4 stars</td>
+            </tr>
+              <tr>
+            <td>Machines en guns</td>
+            <td>230.00 €</td>
+            <td>Mechanical</td>
+            <td>4 stars</td>
+            </tr>
+                <tr>
+            <td>Machines en guns</td>
+            <td>250.00 €</td>
+            <td>Mechanical</td>
+            <td>4 stars</td>
+            </tr>
+                <tr>
+            <td>Machines en guns</td>
+            <td>245.00 €</td>
+            <td>Mechanical</td>
+            <td>4 stars</td>
+            </tr>
+                <tr>
+            <td>Machines en guns</td>
+            <td>288.00 €</td>
+            <td>Mechanical</td>
+            <td>4 stars</td>
+            </tr>
+            
+        </tbody>   
+	    </table>
+	</section>
+	<!-- form oefening -->
+	<section>
+	   <h2>We waarderen uw tijd en contact met ons</h2>
+	   
+<!-- begin contact fomr --> 
+
+<form id="contact-form" action="/" method="post">
+<fieldset>
+<legend>personsgegevens formulier</legend>
+<table class="great">
+<tr>
+<td><label for="lastname" class="patron">Achternaam:</label></td>
+<td><input class="marshall" type="text" name="lastname" value="" id="lastname" placeholder="Vul uw achternaam in" required></td>
+</tr>
+
+<tr>
+<td><label for="firstname" class="patron">Voornaam:</label></td>
+<td><input class="marshall" type="text" name="firstname" value="" id="firstname" placeholder="Vul uw voornaam in" required></td>
+</tr>
+
+<tr>
+<td><label for="dbirth" class="patron">Geboorte Datum:</label></td>
+<td><input class="marshall" type="text" name="dbirth" value="" id="dbirth" placeholder="format mm/dd/jjjj" required></td>
+</tr>
+
+<tr>
+<td><label for="sex" class="patron">Sex:</label></td>
+<td>
+<input type="radio" name="sex" value="" id="sexM" value="man">Man
+<input type="radio" name="sex" value="" id="sexW" value="female">Vrouw
+</td>
+</tr>
+
+<tr>
+<td><label for="postcode" class="patron">Postcode: </label></td>
+<td><input class="marshall" type="text" name="postcode" id="postcode" value="" placeholder="format 1111 AA" required>
+</td>
+</tr>
+
+<tr>
+<td><label for="address" class="patron">Adress: </label></td>
+<td><input class="marshall" type="text" name="address" id="address" value="" placeholder="vul uw vol adres in" required></td>
+</tr>
+
+<tr>
+<td><label for="message" class="patron">Message: </label></td>
+<td><textarea class="text_form marshall" type="text" name="message" id="message" value="" placeholder="Message"></textarea><br><br>
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="checkbox" name="newsletter" id="newsletter">
+<label for="newsletter" id="newsletter">Do wish you to receive newsletter? <br>
+<input name="conditions" type="checkbox" required id="conditions" value="">
+I agree with the general conditions and privacy.
+<span class="form-error fa fa-exclamation-circle" id="conditions_error">Accept terms to proceed</span>
+<br><br>
+</label>
+</td></tr>
+
+<tr>
+<td></td>
+<td><input type="button" id="send" value="Verstuur">
+<input type="reset" id="reset" value="Reset"></td>
+
+</tr>
+
+</table>
+</fieldset>
+</form>
+	</section>
+	<!-- Reserveringsform -->
+	
+		<section>
+	   <h2>Vul het form in voor een reservering</h2>
+	   
+<!-- begin contact fomr --> 
+
+<form id="reservering-form" action="/" method="post">
+<fieldset>
+<legend>Reservering formulier</legend>
+<table class="great">
+<tr>
+<td><label for="lastname" class="patron">Achternaam:</label></td>
+<td><input class="marshall" type="text" name="lastname" value="" id="lastname" placeholder="Vul uw achternaam in" required></td>
+</tr>
+
+<tr>
+<td><label for="firstname" class="patron">Voornaam:</label></td>
+<td><input class="marshall" type="text" name="firstname" value="" id="firstname" placeholder="Vul uw voornaam in" required></td>
+</tr>
+
+<tr>
+<td><label for="email" class="patron">Emailadres:</label></td>
+<td><input class="marshall" type="text" name="email" value="" id="email" placeholder="persoon@mymail.com" required></td>
+</tr>
+
+<tr>
+<td><label for="reserveringsDatum" class="patron">Voornaam:</label></td>
+<td><input class="marshall" type="text" name="reserveringsDatum" value="" id="reserveringsDatum" placeholder="format mm/dd/jjjj om: 00.00 uur" required></td>
+</tr>
+
+<tr>
+<td>
+<label for="sport">Kies Sport:</label></td>
+<td><input list="sports" name="sport" id="sport" placeholder="Kies een sport">
+<datalist id="sports">
+<option value="Kickbox">
+<option value="Squash">
+<option value="Afro Dance">
+<option value="Fat burners">
+<option value="Bambino">
+</datalist>  
+</td>
+</tr>
+
+<tr>
+<td><label for="lid" class="patron">Bent u lid?</label></td>
+<td><input type="checkbox" name="lid" value="" id="lid">Ja
+<input type="checkbox" name="lid" value="" id="lid">Nee </td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="checkbox" name="newsletter" id="newsletter">
+<label for="newsletter" id="newsletter">Ik wil newsletters ontvangen met aanbiedingen<br>
+<input name="conditions" type="checkbox" required id="conditions" value="">
+I agree with the general conditions and privacy.
+<span class="form-error fa fa-exclamation-circle" id="conditions_error">Ik ga akkoord met de voorwaarden</span>
+<br><br>
+</label>
+</td></tr>
+
+<tr>
+<td><label for="message" class="patron">Message: </label></td>
+<td><textarea class="text_form marshall" type="text" name="message" id="message" value="" placeholder="Message"></textarea><br><br>
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="button" id="send" value="Verstuur">
+<input type="reset" id="reset" value="Reset"></td>
+
+</tr>
+
+</table>
+</fieldset>
+</form>
+	</section>
+
+	<hr>
+	<footer>
+		<ul>
+			<li><a href="../index.html">Home</a></li> | 
+			<li><a href="pages/tables.html">Tables</a></li> | 
+			<li><a href="voorbeeld.html">Voorbeeld</a></li> | 
+			<li><a href="#">page 3</a></li> 
+		</ul>
+		<p>Copyright &copy; <a href="www.techgrounds.nl" target="_blank">Techgrounds Academy</a> 2021</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<base href="">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, minimum-scale=2.0, user-scale=yes">
+
+<head>
+	<title> CSS Selectors</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	
+	<header></header>
+	<main>
+		<section>
+			<h1>Antworden op vragen handout CSS</h1>
+			<p>
+				<ol>
+					<li>Je kunt op 3 verschillende manieren CSS in je HTML inladen</li>
+					<li><ul>
+						<li>Embedded ccs via style tag in de head tag</li>
+						<li>inline styling: in de tag zelf via style tag</li>
+						<li>External style: hier wordt alle styling in een aparte bestand geschreven en wordt deze naar de html gelinkd via de link tag</li>
+						<li></li>
+					</ul></li>
+					<li>CSS syntax</li>
+					<ul>
+						<li>CSS heeft een apart syntax met name het gebruik van selectors, id, classes en moet volgens de regels van het w3c school geschreven en gevalideerd wordt </li>
+					</ul>
+					<li>Selectors</li>
+					<ul>
+						<li>universal selector: Er wordt een * er voor gebruikt om als een algemeen styling te geven</li>
+						<li>Id selector: wordt met een # gemaakt en dat heeft met een ID te maken zoals div main nav en het heeft hoge prioriteit. Ex. #main{hier komt de styling te staan}, of div id="geef een id naam" die wordt in de css gestyled</li>
+						<li>class selector: door een . gemaakt voor de naam ex: .power{}</li>
+						<li>Descendent Selector: elements die descendent zijn van een element ex div p. p is een descendent van de div</li>
+						<li>child selector: div > p deze spreekt alle direct childern van een element</li>
+						<li>Adjacent Sibling Selector div + p: om een element direct na een specifieke element aan te spreken. Alle elementen moeten childern of the same parent / element</li>
+						<li>General sibling ~ selector: selecteert alle kleine kinderen van een specifieke element</li>
+						<li><a href="tables.html" target="_blank">link naar antwoorden</a></li>
+					</ul>
+				</ol>
+			</p>
+			<hr>
+		<div id="man">
+			<h2>Title</h2>
+			<p>Ik ben een direct child, styling #man p {}</p>
+		</div>
+
+		<div id="great">
+			
+			<h2>class selectors</h2>
+			<p>paragraaf text green</p>
+			<p>another paragraph text black</p>
+		</div>
+		</section>
+		<hr>
+		<section>
+			<h2>child selector </h2>
+			<div class="center">
+				<p>All P elementen hebben zelfde styling</p>
+				<p>this is para</p>
+				<p>this is para</p>
+				<p>this is para</p>
+
+			</div>
+			<p>adjacent sibiling selector</p>
+
+			<div>
+				<p>general sibiling selector div ~ p</p>
+			</div>
+			<p>this is sibiling 11</p>
+			<p>this is sibiling 22</p>
+			<p>this is sibiling 33</p>
+		</section>
+		<hr>
+		<h2>Het box Model</h2>
+		<div id="boxModel">
+			<p> Dit is een blok box en neemt hele breedte en nog meer </p>
+
+			<p> In dit blok zit <span> Inline text </span> in wat dus in de volgende regel net komt te <span>STAAN</span> en niets meer </p>
+			<hr>
+			<h3>Antwoord vraag 5 is padding- top right bottom en left- property</h3>
+			<h3>Antwoord vraag 6 is margin property - top right bottom en left- </h3>
+
+			<hr>
+			<section class="blok">
+			<h4>Opdracht 7 & 8</h4>
+			<p>dit is de content</p>
+				<ul>
+					<li>breedte: 100px + 30(padding(left + right) 10px + margin (left + right) 10px + border (left + right) 10px) = 130px</li>
+					<li>hoogte: 100px + 30 = 130px</li>
+					<li>Met height & width teken je een box / element</li>
+				</ul>
+			</section>
+		</div>	
+		<hr>
+		<div id="dispalyPosition">
+			<section>
+				<h3>Opdracht 1</h3>
+				<p>postion values: relative, absolute, sticky, static. Default waarde: relative</p>
+				
+			</section>
+				<section>
+				<h3>Opdracht 2</h3>
+				<p> om de h1 element te positioneren geef je een top: 50px en left: 50px </p>
+			</section>
+			<hr>
+			<h3>Opdracht 7</h3>
+				<section class="greece" title="Welkom in zonnige Griekenland">
+				<h3> Groeten uit Griekenland!</h3>
+				<h4>Kom je ook hier vakantie vieren</h4>
+			</section>
+			
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	</main>
+</body>
+</html>
