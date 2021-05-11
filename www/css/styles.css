@@ -332,6 +332,42 @@ border: 2px solid yellow;
 border-radius: 50px; 
 }
 
+/* opdracht 8*/ 
+.opdracht8{
+    width: 70%; 
+    height: 490px; 
+     background-image: url("../images/mainimg.jpg");
+    background-position: 20% 30%; 
+    background-size: 80% 60%; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: border-box;
+    position: relative;
+ }
+ .opdracht8 h4{ 
+    color: black; 
+    height: 30px; 
+    width: 90%; 
+    background-color: yellow; 
+    padding: 10px; 
+    position: absolute;
+    top: 20px; 
+    left: 30px; 
+ }
+
+ .opdracht8 p{
+    color: white; 
+    font-weight: bolder;
+    background-color: white !important; 
+    width: 40%; 
+    height: 30px; 
+    top: 60px;
+    left: 60px; 
+    padding: 5px;
+    position: absolute;
+  }
+
+
 /* footer styling*/
 
 footer{
