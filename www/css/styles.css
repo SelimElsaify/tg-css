@@ -118,15 +118,14 @@ hr {
     border-radius: 5px; 
     outline: none;
     clear: both;
+    margin: 10px; 
 }
 p {
  
     font-size: 0.9rem; 
     font-weight: normal;
     line-height: 1rem; 
-    color: red; 
     padding: 0; 
-    background-color: rgba(214, 154, 94,0.6);
   }
 
 /*links stying */ 
@@ -335,14 +334,17 @@ border-radius: 50px;
 /* opdracht 8*/ 
 .opdracht8{
     width: 70%; 
-    height: 490px; 
+    height: 290px; 
     background-image: url("../images/mainimg.jpg");
     background-position: 20% 30%; 
-    background-size: 80% 60%; 
+    background-size: 100% 100%; 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-clip: border-box;
     position: relative;
+    float: left; 
+    clear: right; 
+    margin-bottom: 0.5rem; 
  
  }
  .opdracht8 h4{ 
@@ -351,6 +353,7 @@ border-radius: 50px;
     width: 90%; 
     background-color: yellow; 
     padding: 10px; 
+    margin-left: 10px; 
     position: absolute;
     top: 20px; 
     left: 30px; 
@@ -370,17 +373,205 @@ border-radius: 50px;
 .under{
     font-size: 0; 
     height: 30px; 
-    width: 50%; 
-    background-color: white; 
-    padding: 10px; 
-    text-align: right; 
-    float: right; 
-    clear: left; 
-   margin-top: 40px; 
-   margin-left: 80px; 
+    width: 50px; 
+    background-color: yellow; 
+    margin-top: 40px; 
+    display: inline-block;
    
 }
+/* pseudo elemtns styling*/
 
+#pseudoElements p{
+    background-color: transparent;
+    padding: 15px; 
+}
+#pseudoElements{
+    text-align: center;
+    border: 5px solid salmon;
+    padding: 15px;
+    margin: 1rem; 
+    color: white; 
+    position: relative;
+    z-index: 1; 
+
+
+}
+#pseudoElements ::before{
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    top: 10px; 
+    bottom: 10px;
+    left: 10px; 
+    right: 10px; 
+    border: 5px dashed green;
+  
+
+}
+#pseudoElements ::after{
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    top: 5px; 
+    bottom: 5px;
+    left: 5px; 
+    right: 5px; 
+    border: 5px solid blue;
+ 
+
+}
+
+#pseudoElements ::after{
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    top: 20px; 
+    bottom: 20px;
+    left: 20px; 
+    right: 20px; 
+    border: 5px dotted red;
+  }
+
+  #pseudoElements p::before{
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    top: 20px; 
+    bottom: 20px;
+    left: 20px; 
+    right: 20px; 
+    border: 5px dashed green;
+   background: blue;
+
+}
+
+#pseudoElements p::first-letter{
+ color: gold; 
+ font-size: 3em; 
+
+}
+
+  ::selection {
+    background-color: blue; 
+    color: yellow;
+    cursor: progress;
+    outline: red; 
+}
+.grammar p ::grammar-error  {
+  text-decoration: underline red;
+  color: red;
+  background-color: transparent;
+}
+
+/*
+.buttons h2 {
+    width: 50%;
+    height: 50px; 
+    background-color: yellow; 
+    margin-left: 150px; 
+    border: none;
+    position: relative;
+}
+/* creating vertical lines*/ 
+/* vertical line  
+.buttons h2 ::after {
+    content:'';
+    position: absolute;
+    background-color: orange;
+    width: 30%;
+    height: 5px;
+    top: 0;
+    left: 0;
+
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  width: 150px;
+  margin: auto;
+  line-height: 2;
+}
+.top-and-bottom, .left-and-right, .corner-border, .bottom-corner {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+/* top line */
+.grammar h4{
+     font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  width: 400px;
+  height: 50px; 
+  margin: auto;
+   color: black; 
+  background-color: gold; 
+}
+
+
+/* vertical line */
+.corner-border h4::after {
+  content:'';
+  position: absolute;
+  background-color: pink;
+  width: 3px;
+  height: 60%;
+  top: 0;
+  left:-15px;
+ 
+}
+
+/* horizontal line */
+.corner-border h4::before {
+  content:'';
+  position: absolute;
+  background-color: pink;
+  width: 20%;
+  height: 3px;
+  top: 0;
+  left:-12px;
+ 
+}
+
+/* vertical line */
+.bottom-corner h4::after {
+  content:'';
+  position: absolute;
+  background-color: #85C1E9;
+  width: 3px;
+  height: 50%;
+  bottom: 0;
+  right: 45px;
+ 
+}
+/* horizontal line */
+.bottom-corner h4::before {
+  content:'';
+  position: absolute;
+  background-color: #85C1E9;
+  width: 20%;
+  height: 3px;
+  bottom: 0;
+  right: 45px;
+ 
+}
+
+/* horizontal line */
+
+/*
+.buttons h2 ::before {
+    content:'';
+    position: absolute;
+    background-color: orange;
+    width: 30%;
+    height: 5px;
+    top: 0;
+    left: 0;
+
+}
+*/ 
 /* footer styling*/
 
 footer{
