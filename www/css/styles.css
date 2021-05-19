@@ -146,18 +146,18 @@ a:hover, a:active{
 /*button stying */ 
  a.button {
     display: block;
-    width: 130px;
-     height: 30px; 
-     
-    background-color: #D98A3F;
+    width: auto;
+     height: 40px; 
+    background-color: blue;
     text-align: center;
     text-transform: capitalize;
     padding: 5px;
+    margin: 0 auto; 
     border: 1px solid white;
-    margin-left: 225px; 
-    margin-top: 15px; 
+ 
     border-radius: 5px;
     outline: none;
+    color: white; 
   }
   a.button:hover {
     border: 1px solid rgba(102, 0, 0, 0.5);
@@ -572,6 +572,217 @@ h2 {
 
 }
 */ 
+#opdracht5{
+position: relative;
+width: 100%;
+height: 250px; 
+padding: 0.2rem;
+border: 2px solid rgb(212, 11, 11);
+}
+.cool{
+    padding: 0.7rem; 
+}
+.cool::before{
+    position: absolute;
+    content:"";
+    background-image: url("../images/thumb-3.jpg");
+    background-position: 30% 20%;
+    background-size: cover;
+    left: 0;
+    top: 0; 
+    overflow: hidden;
+    width: 100%;
+    height: 250px; 
+    padding: 0;
+    z-index: -1;
+    }
+
+/*flexbox*/ 
+#FlexMe{
+   background-color: yellowgreen;
+   width: 100%;
+}
+#FlexMe ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-end;
+}
+.flexItems li, .flexas li, .op_6 li{
+    background-color: yellow;
+     text-align: center;
+    padding: 20px;
+    font-size: 25%; 
+}
+.flexas li:nth-child(2){
+    background-color: tomato;
+    flex-grow: 2;
+}
+#wonders ul{
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 100%; 
+
+
+
+    }
+.op_6 li{
+    background-color: violet;
+     list-style-type: none;
+    margin-bottom: 0.1rem;
+    height: 0.6rem;
+   
+   }
+.item1{ 
+width: 100%;
+}
+
+.item2{ 
+width: 70%;
+}
+
+.item3{ 
+width: 50%;
+}
+.item4{ 
+width: 40%;
+}
+.item5{ 
+width: 50%;
+}
+.item6{ 
+width: 20%;
+}
+
+/* ****************** opdracht 8 ***************** */ 
+#items-container{
+  width: auto; 
+  border: 2px solid red;
+  padding: 10px; 
+} 
+#items-container ul{
+  padding: 0;
+  margin: 0; 
+  list-style-type: none;
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 3; 
+  
+}
+
+.op_8 li {
+  height: 100px; 
+  width: 33%; 
+  border: 1px solid black;
+  border-radius: 10px; 
+  text-align: center; 
+  padding: 10px; 
+  color: brown;
+  margin-bottom: 0.2rem; 
+}
+
+.op_8 li:first-child{
+  background-color: lightyellow; 
+}
+.op_8 li:last-child{
+  background-image: linear-gradient(to right bottom, blue, lightyellow, greenyellow); 
+}
+.op_8 li:nth-child(2){
+  background-color: lightblue; 
+}
+.op_8 li:nth-child(3){
+  background-color: green; 
+}
+.op_8 li:nth-child(4){
+  background-color: white; 
+}
+.op_8 li:nth-child(5){
+  background-color: black; 
+}
+
+/* ======  Opdracht 9 Super mario       =========== */
+
+#op9-container{
+ width: 100%; 
+ display: flex; 
+ flex-direction: row; 
+ flex-wrap: nowrap;
+ justify-content: space-around;
+
+}
+
+#op9-container .card1, .card2, .card3, .card4{
+min-width: 20%; 
+max-width: 23%; 
+height: auto; 
+text-align: center; 
+background-color: white; 
+padding-bottom: 0.2rem; 
+border: 2px solid gold;
+}
+#op9-container .card1:hover, .card2:hover, .card3:hover, .card4:hover{
+width: 40%; 
+background-color: aqua; 
+padding-bottom: 0.2rem; 
+box-shadow: 5px 4px 6px rgb(115, 0, 153); 
+text-decoration: underline;
+color: yellowgreen; 
+font-size: 0.6rem; 
+}
+#op9-container .card1{
+background-image: url(../images/supermario_1.png);
+background-repeat: no-repeat;
+background-size: 50% 50%; 
+background-position: top center; 
+margin-bottom: 1rem; 
+}
+
+#op9-container .card2{
+background-image: url(../images/supermario_15.jpg);
+background-repeat: no-repeat;
+background-size: 50% 50%; 
+background-position: top center; 
+margin-bottom: 1rem; 
+}
+
+#op9-container .card3{
+background-image: url(../images/supermario_3.jpg);
+background-repeat: no-repeat;
+background-size: 50% 50%; 
+background-position: top center; 
+margin-bottom: 1rem; 
+}
+
+#op9-container .card4{
+background-image: url(../images/supermario_4.jpg);
+background-repeat: no-repeat;
+background-size: 50% 50%; 
+background-position: top center; 
+margin-bottom: 1rem; 
+}
+
+#op9-container  h2{ 
+color: black; 
+padding-top: 14rem; 
+}
+
+#op9-container p{ 
+line-height: 18px; 
+
+}
+
+
+
+
 /* footer styling*/
 
 footer{
