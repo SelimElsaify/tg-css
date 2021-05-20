@@ -779,7 +779,105 @@ padding-top: 14rem;
 line-height: 18px; 
 
 }
+/* transitions  */ 
+.container{
+    width: 100%; 
+    position: relative;
+    background-color: ivory;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid violet;
+}
+.bar{
+    width: 100px;
+    height: 100px;
+ 
+    display: block;
+    padding: 1rem; 
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
 
+/*box 1*/ 
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: sandybrown;
+    transition: width 1s, height 1s, background-color 3s, transform 2s ease-in-out;
+}
+.container:hover .box1{
+ background-color: brown;
+ transform: translate(900px, 0);
+ border: 2px dotted #adff2f;
+ border-radius: 50%;
+}
+/*box 2*/ 
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(19, 238, 103);
+    transition: width 1s, height 1s, background-color 3s, transform 3s ease-out;
+}
+.container:hover .box2{
+ background-color: rgb(207, 5, 5);
+ transform: translate(900px, 0);
+ border: 2px solid #543bc5;
+ border-radius: 30%;
+}
+/*box 3*/
+
+.box3{
+    width: 110px;
+    height: 110px;
+    background-color: rgb(209, 7, 209);
+    transition: width 2s, height 1s, background-color 3s, transform 5s ease-out-elastic;
+}
+.container:hover .box3{
+ background-color: rgb(184, 243, 21);
+ transform: translate(250px, 0);
+ border: 2px solid green;
+ border-top-left-radius: 10%;
+ border-bottom-right-radius: 10%;
+}
+/*box 4*/ 
+.box4{
+    width: 110px;
+    height: 110px;
+    background-color: rgb(53, 14, 226);
+    transition: width 2s, height 1s, background-color 3s, transform 2s ease-in-out-quint;
+}
+.container:hover .box4{
+ background-color: rgb(9, 12, 1);
+ transform: translate(-150px, 0);
+ border: 2px solid green;
+border-radius: 60%;
+}
+/*box 5*/ 
+.box5{
+    width: 110px;
+    height: 110px;
+    background-color: rgb(245, 6, 233);
+    transition: width 2s, height 1s, background-color 3s, transform 2s ease;
+}
+.container:hover .box5{
+ background-color: rgb(243, 239, 8);
+ transform: translate(880px, 0);
+ border: 2px dashed rgb(128, 0, 111);
+border-radius: 60%;
+}
+/*box 6*/ 
+.box6{
+    width: 110px;
+    height: 110px;
+    background-color: rgb(216, 6, 6);
+    transition: width 2s, height 2s, background-color 4s, transform 4s ease;
+}
+.container:hover .box6{
+ background-color: rgb(107, 240, 107);
+ transform: translate(1000px, 0);
+ border: 2px dashed rgb(201, 235, 11);
+border-radius: 45%;
+}
 
 
 
