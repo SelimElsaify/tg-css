@@ -158,6 +158,7 @@ a:hover, a:active{
     border-radius: 5px;
     outline: none;
     color: white; 
+    transition: all 0.5s ease-out;
   }
   a.button:hover {
     border: 1px solid rgba(102, 0, 0, 0.5);
@@ -217,15 +218,16 @@ main nav ul li a {
     display: block;
     text-align: center;
     text-transform: capitalize;
+    transition: all 1s ease-in-out;
   }
 main nav ul li:last-child{
 margin-right: 0.8rem; 
 }
-  main nav ul li a:hover {
+  main nav ul li a:hover, main nav ul li a:focus {
     background-color: white;
     color: #005369;
     text-transform: uppercase;
-}
+  }
 
 /* UL childeren styles */
 ul > li{
@@ -850,7 +852,9 @@ line-height: 18px;
  background-color: rgb(9, 12, 1);
  transform: translate(-150px, 0);
  border: 2px solid green;
-border-radius: 60%;
+ border-radius: 60%;
+ color: aliceblue;
+ 
 }
 /*box 5*/ 
 .box5{
@@ -863,13 +867,17 @@ border-radius: 60%;
  background-color: rgb(243, 239, 8);
  transform: translate(880px, 0);
  border: 2px dashed rgb(128, 0, 111);
-border-radius: 60%;
-}
+ border-radius: 60%;
+} 
 /*box 6*/ 
 .box6{
     width: 110px;
     height: 110px;
     background-color: rgb(216, 6, 6);
+    -webkit-transition-transition: width 2s, height 2s, background-color 4s, transform 4s ease;
+    -moz--transition: width 2s, height 2s, background-color 4s, transform 4s ease;
+    -ms-transition-transition: width 2s, height 2s, background-color 4s, transform 4s ease;
+    -o--transition: width 2s, height 2s, background-color 4s, transform 4s ease;
     transition: width 2s, height 2s, background-color 4s, transform 4s ease;
 }
 .container:hover .box6{
@@ -877,8 +885,16 @@ border-radius: 60%;
  transform: translate(1000px, 0);
  border: 2px dashed rgb(201, 235, 11);
 border-radius: 45%;
+animation: animationFrames 1s infinite alternate ease-in-out;
 }
-
+@keyframes animationFrames{
+from{
+    transform: rotate(0deg);
+}
+to{
+    transform: rotate(0360deg);
+}
+}
 
 
 /* footer styling*/
