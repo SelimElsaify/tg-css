@@ -918,8 +918,9 @@ to{
 }
 
 .op66:hover{
- background-color: magenta;
+ background-image: linear-gradient(to bottom,blue,red, yellow);
  color: snow;
+ width: 30%;
  font-size: 32px;
  font-weight: bold;
  text-decoration: underline;
